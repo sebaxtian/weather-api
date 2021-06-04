@@ -10,7 +10,7 @@ This is an example of Weather API, the weather data is collected from [Open Weat
 
 - [x] ~~Add Project Description~~
 - [ ] Add About the Project
-- [ ] Requirements
+- [x] ~~Requirements~~
 - [ ] Create and Setup Virtual Environment
 - [ ] Install Requeriments
 - [ ] Setup Environment Variables
