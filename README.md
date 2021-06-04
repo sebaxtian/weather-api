@@ -16,7 +16,7 @@ This is an example of Weather API, the weather data is collected from [Open Weat
 - [x] ~~Setup Environment Variables~~
 - [x] ~~Run Migrations~~
 - [ ] Python Unit Testing
-- [ ] Run the Project Locally
+- [x] ~~Run the Project Locally~~
 - [ ] Create Admin User
 - [ ] Login Django Admin Site
 - [ ] Postman API Documentation
@@ -101,6 +101,8 @@ Now the project is available to run locally, running a terminal:
 # Run the app locally
 heroku local web
 ```
+
+Then open [http://localhost:5000/admin](http://localhost:5000/admin) in your browser.
 
 ## Create Admin User
 
