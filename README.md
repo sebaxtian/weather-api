@@ -11,9 +11,10 @@ This is an example of Weather API, the weather data is collected from [Open Weat
 - [x] ~~Add Project Description~~
 - [ ] Add About the Project
 - [x] ~~Requirements~~
-- [ ] Create and Setup Virtual Environment
-- [ ] Install Requeriments
-- [ ] Setup Environment Variables
+- [x] ~~Create and Setup Virtual Environment~~
+- [x] ~~Install Requeriments~~
+- [x] ~~Setup Environment Variables~~
+- [x] ~~Run Migrations~~
 - [ ] Python Unit Testing
 - [ ] Run the Project Locally
 - [ ] Create Admin User
@@ -79,6 +80,14 @@ cp -fv example.env .env
 ```
 
 After copy the example.env file to .env you can edit and change the values in the .env file, by default you can use the same file.
+
+## Run Migrations
+
+```bash
+# Within api/ folder run in a terminal
+python manage.py makemigrations
+python manage.py migrate
+```
 
 ## Python Unit Testing
 
