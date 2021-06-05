@@ -29,6 +29,5 @@ jobs:
       env:
         OPEN_WEATHER_KEY: ${{ secrets.OPEN_WEATHER_KEY }}
       run: |
-        echo $OPEN_WEATHER_KEY
         cd api
         pytest
