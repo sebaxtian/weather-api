@@ -1,6 +1,7 @@
 # weather-api
 
 This is an example of Weather API, the weather data is collected from [Open Weather Map](https://openweathermap.org/)
+You should be create an account and generate a new API key to use in this project.
 
 ---
 
@@ -9,7 +10,7 @@ This is an example of Weather API, the weather data is collected from [Open Weat
 ## Roadmap
 
 - [x] ~~Add Project Description~~
-- [ ] Add About the Project
+- [x] ~~Add About the Project~~
 - [x] ~~Requirements~~
 - [x] ~~Create and Setup Virtual Environment~~
 - [x] ~~Install Requeriments~~
@@ -27,7 +28,11 @@ This is an example of Weather API, the weather data is collected from [Open Weat
 
 ## About the Project
 
-`About the Project Here`
+This project is a bit demo to implement a Django API REST, it requests weather data from Open Weather Map service, it's calling Weather API and expose a GET endpoint to request the current weather as a human human-readable format, this project has unit testing with pytest, cache data with timeout 2 minutes by default, some attributes can be set up via environment variables using the .env file.
+
+The repository on GitHub has an Action to run a CI process for each push/push_request to develop branch, when that happens all tests are executed by pytest, all tests need to be approved, thus the develop branch is merged into the master branch. Finally, the Heroku service deploys the master branch and runs the application, you can use the Postman API Documentation to use the Weather API endpoint.
+
+This project is in progress and could be refactorized to better performance you can check some TODO's on the code.
 
 ## Requirements
 
