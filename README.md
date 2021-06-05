@@ -18,7 +18,7 @@ This is an example of Weather API, the weather data is collected from [Open Weat
 - [x] ~~Python Unit Testing~~
 - [x] ~~Run the Project Locally~~
 - [x] ~~Create Admin User~~
-- [ ] Login Django Admin Site
+- [x] ~~Login Django Admin Site~~
 - [ ] Postman API Documentation
 - [ ] Run Automated Testing with Postman
 - [ ] Getting Started Video

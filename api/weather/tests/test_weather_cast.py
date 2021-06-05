@@ -23,7 +23,7 @@ def get_weather_response():
     )
     # print(r.status_code)
     if r.status_code != status.HTTP_200_OK:
-        raise NameError('Open Weather API, Error')
+        raise NameError(f"Open Weather API, Error: {r.status_code} {r.text}")
     return r.json()
 
 
