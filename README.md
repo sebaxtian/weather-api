@@ -15,7 +15,7 @@ This is an example of Weather API, the weather data is collected from [Open Weat
 - [x] ~~Install Requeriments~~
 - [x] ~~Setup Environment Variables~~
 - [x] ~~Run Migrations~~
-- [ ] Python Unit Testing
+- [x] ~~Python Unit Testing~~
 - [x] ~~Run the Project Locally~~
 - [x] ~~Create Admin User~~
 - [ ] Login Django Admin Site
@@ -91,7 +91,10 @@ python manage.py migrate
 
 ## Python Unit Testing
 
-`Python Unit Testing Here`
+```bash
+# Within api/ folder run in a terminal
+pytest
+```
 
 ## Run the Project Locally
 

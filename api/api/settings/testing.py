@@ -24,12 +24,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY = 'bA6(KmuSyqS::h5U6/X_Uu5.Fc2;X&NpapApg;A*(3=F[3jR}:'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [os.getenv("ALLOWED_HOSTS")]
+ALLOWED_HOSTS = ['*']
 
 # TODO: Setup CORS_ORIGIN_WHITELIST see https://github.com/adamchainz/django-cors-headers#configuration
 CORS_ORIGIN_ALLOW_ALL = False
@@ -85,7 +85,7 @@ JWT_AUTH = {
     'rest_framework_jwt.utils.jwt_get_user_id_from_payload_handler',
     'JWT_RESPONSE_PAYLOAD_HANDLER':
     'rest_framework_jwt.utils.jwt_response_payload_handler',
-    'JWT_SECRET_KEY': str(os.getenv("JWT_SECRET_KEY")),
+    'JWT_SECRET_KEY': 'bA6(KmuSyqS::h5U6/X_Uu5.Fc2;X&NpapApg;A*(3=F[3jR}:',
     'JWT_GET_USER_SECRET_KEY': None,
     'JWT_PUBLIC_KEY': None,
     'JWT_PRIVATE_KEY': None,
@@ -139,7 +139,7 @@ CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
         'LOCATION': '/tmp/django_cache',
-        'TIMEOUT': os.getenv("CACHE_TIMEOUT")
+        'TIMEOUT': 5#120
     }
 }
 
