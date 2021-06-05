@@ -107,6 +107,13 @@ heroku local web
 
 Then open [http://localhost:5000/admin](http://localhost:5000/admin) in your browser.
 
+Please, to deploy application on Heroku you should be [DISABLE_COLLECTSTATIC](https://devcenter.heroku.com/articles/django-assets#disabling-collectstatic):
+
+```bash
+# Disabling Collectstatic
+heroku config:set DISABLE_COLLECTSTATIC=1
+```
+
 ## Create Admin User
 
 Django Admin Site needs an Admin User,
