@@ -19,12 +19,15 @@ class WeatherView(APIView):
     permission_classes = [AllowAny]
 
     def get(self, request):
+        # Request Data
+        city = request.GET.get('city', 'Santiago de Cali')
+        country = request.GET.get('country', 'CO').lower()
+
+        cache_key = f"weather_{city}{country}"
+
         # Get Cache
-        weather = cache.get('weather')
+        weather = cache.get(cache_key)
         if not weather:
-            # Request Data
-            city = request.GET.get('city', 'Santiago de Cali')
-            country = request.GET.get('country', 'CO').lower()
 
             # Request to Open Weather API
             OPEN_WEATHER_KEY = os.getenv("OPEN_WEATHER_KEY")
@@ -51,7 +54,7 @@ class WeatherView(APIView):
             # weather.save()
 
             # Set Cache
-            cache.set('weather', weather)
+            cache.set(cache_key, weather)
 
         # Success
         return Response({"status": status.HTTP_200_OK, "message": "Weather", "data": weather}, status=status.HTTP_200_OK)
