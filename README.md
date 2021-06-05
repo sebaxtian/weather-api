@@ -19,7 +19,7 @@ This is an example of Weather API, the weather data is collected from [Open Weat
 - [x] ~~Run the Project Locally~~
 - [x] ~~Create Admin User~~
 - [x] ~~Login Django Admin Site~~
-- [ ] Postman API Documentation
+- [x] ~~Postman API Documentation~~
 - [ ] Run Automated Testing with Postman
 - [ ] Getting Started Video
 
@@ -139,7 +139,7 @@ Use the Admin username and password to Login into the Django Admin Site.
 
 Read and review the Weather API Documentation in Postman:
 
-[Weather API Documentation](#!)
+[Weather API Documentation](https://documenter.getpostman.com/view/2374715/TzY4hFrJ)
 
 ## Run Automated Testing with Postman
 
